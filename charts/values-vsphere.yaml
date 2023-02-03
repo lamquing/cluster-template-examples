@@ -15,7 +15,7 @@ nodepools:
   taints: {}
 
   # specify nodepool size
-  quantity: 1
+  quantity: 3
 
   # Pause node pool
   paused: false
@@ -60,7 +60,7 @@ nodepools:
   # machineDeploymentAnnotations: {}
 
   # specify nodepool name
-  name: vsphere-nodepool-1
+  name: rancher-gla
 
   # vSphere vm configuration parameters (used for guestinfo)
   # cfgparam: []
@@ -80,7 +80,7 @@ nodepools:
   # contentLibrary: ""
 
   # vSphere CPU number for docker VM
-  cpuCount: "2"
+  cpuCount: "4"
 
   # 'Creation type when creating a new virtual machine. Supported values: vm, template, library, legacy'
   creationType: "vm"
@@ -101,16 +101,16 @@ nodepools:
   diskSize: "20480"
 
   # vSphere folder for the docker VM. This folder must already exist in the datacenter
-  # folder: ""
+  folder: "LABO Gaetan"
 
   # vSphere compute resource where the docker VM will be instantiated. This can be omitted if using a cluster with DRS
-  # hostsystem: ""
+  hostsystem: "svmx92.groups.local"
 
   # vSphere size of memory for docker VM (in MB)
   # memorySize: "2048"
 
   # vSphere network where the virtual machine will be attached
-  # network: ""
+  network: "LAN - Acerta Connect Test Dev"
 
   # vSphere resource pool for docker VM
   # pool: ""
@@ -137,7 +137,7 @@ nodepools:
   # vappTransport: ""
 
   # vSphere IP/hostname for vCenter
-  # vcenter: ""
+  vcenter: "svce02.groups.local"
 
   # vSphere Port for vCenter
   vcenterPort: 443
